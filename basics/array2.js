@@ -1,7 +1,8 @@
 const marvel_heroes = ["thor","ironman" , "spiderMan"];
 const dc_heroes = [ "America ", "superman", "Gamora"];
 
-// marvel_heroes.push(dc_heroes);
+marvel_heroes.push(dc_heroes);
+
 // console.log(marvel_heroes);
 
 // console.log(marvel_heroes[3][1])
@@ -14,14 +15,14 @@ const dc_heroes = [ "America ", "superman", "Gamora"];
 
 //joining array using spread operator
 
-// const myNewArr= [...marvel_heroes,...dc_heroes]
+const myNewArr= [...marvel_heroes,...dc_heroes]
 // console.log(myNewArr)
 
 
-// const another_array = [1,2,2, [1,2,3,],4,9,[4,5,6,[7,8]]];
+const another_array = [1,2,2, [1,2,3,],4,9,[4,5,6,[7,8]]];
 // // flat methods give new array with all sub array element concatenated to specified depth.
-// const newAnother_Arr= another_array.flat(Infinity)
-// console.log(newAnother_Arr);
+const newAnother_Arr= another_array.flat(Infinity)
+console.log(newAnother_Arr);
 
 // console.log(another_array);
 
@@ -36,4 +37,4 @@ let score2 =200;
 let score3 =300;
 
 //of method return a new array from a set of element
-console.log(Array.of(score,score2,score3));
+// console.log(Array.of(score,score2,score3));
